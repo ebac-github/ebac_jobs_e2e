@@ -21,7 +21,7 @@ const ListaVagas = () => {
   const [filtro, setFiltro] = useState<string>('')
 
   useEffect(() => {
-    fetch('https://ebac-fake-api.vercel.app/api/vagas')
+    fetch('https://api-ebac.vercel.app/api/vagas')
       .then((res) => res.json())
       .then((res) => {
         setVagas(res)
