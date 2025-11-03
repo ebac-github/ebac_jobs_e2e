@@ -19,7 +19,7 @@ const Vaga = () => {
 
   useEffect(() => {
     if (params.id) {
-      fetch(`https://ebac-fake-api.vercel.app/api/vagas/${params.id}`)
+      fetch(`https://api-ebac.vercel.app/api/vagas/${params.id}`)
         .then((res) => res.json())
         .then((res) => {
           setVaga(res)
